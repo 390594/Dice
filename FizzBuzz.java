@@ -2,19 +2,13 @@ public class FizzBuzz
 
 {
     public void run() {
-        int i = 1;
-        while (i >= 1 && i <= 100) {
-            System.out.println(i);
-            i += 1;
+        for (int i = 1; i <= 100; i++)
+        {
+            if ( i/10.0 == 5 || i/10.0 == 0 ) {
+                System.out.println("Buzz");
+            }
         }
-
-        if (i/3.0 == i/5.0 ) {
-            System.out.println("FizzBuzz");
-        } else {
-            System.out.println(i);
-        }
-        }
-    }
+    }    
 
     public static void main(String[] args)
     {
