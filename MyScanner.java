@@ -5,24 +5,15 @@ public class MyScanner
 
     public void run() {
         Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter(",|/n");
         while (true) {
-            if (scanner.hasNext()) {
-                String str = scanner.next();
-                System.out.println(str);
-            }
-        }
-        
-        while (true) {
-            if (scanner.hasNext()) {
-                String str = scanner.next();
-                System.out.println(str);
-            }
+            String nxt = scanner.next();
+            System.out.println(nxt);
         }
     }
 
-    public static void main(String[] args) {
-        MyScanner myScanner = new MyScanner();
-        myScanner.run();
+    public static void main (String[] args) {
+        MyScanner myscanner = new MyScanner();
+        MyScanner.run();
     }
 }
-
