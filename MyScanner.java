@@ -7,13 +7,15 @@ public class MyScanner
         Scanner scanner = new Scanner(System.in);
         while (true) {
             if (scanner.hasNext()) {
-                String str = scanner.next();
-                System.out.println(str);
+                String str1 = scanner.next();
+                System.out.println(str1);
             } else if (scanner.hasNextInt()) {
-                String str = scanner.next();
-                System.out.println(str);
-            } else if (scanner
-
+                String str2 = scanner.next();
+                System.out.println(str2);
+            } else if (scanner.hasNextInt()) {
+                String str3 = scanner.next();
+                System.out.println(str3 + str3 + str3);
+            }        
         }
     }
 
@@ -22,5 +24,4 @@ public class MyScanner
         myScanner.run();
     }
 }
-
 
