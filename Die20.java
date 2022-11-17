@@ -1,4 +1,4 @@
-public class Die6
+public class Die20
 {
   /**
    * Contains the current value of the die
@@ -8,7 +8,7 @@ public class Die6
   /**
    * Constructor to do an initial roll to set the first value
    */
-  public Die6() {
+  public Die20() {
     this.roll();
   }
 
@@ -21,11 +21,11 @@ public class Die6
   }
 
   /**
-   * Roll the die! Generate random number 1 <= x <= 6 and assign to value
+   * Roll the die! Generate random number 1 <= x <= 20 and assign to value
    * Note that roll does NOT return the new value
    */
   public void roll() {
-    this.value = (int)(Math.random() * 6) + 1;
+    this.value = (int)(Math.random() * 20) + 1;
   }
 
   /**
