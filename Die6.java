@@ -1,11 +1,7 @@
-public class DieN
+public class Die6
 {
-
     private int value;
-    private int sides;
-
-    public DieN(int sides) {
-        this.sides = sides;
+    public Die6() {
         this.roll();
     }
 
@@ -14,11 +10,11 @@ public class DieN
     }
 
     public void roll() {
-        this.value = (int)(Math.random() * this.sides) + 1;
+        this.value = (int)(Math.random() * 6) + 1;
     }
 
     public int rollAndGetValue() {
-        this.roll();
+        roll();
         return getValue();
     }
 
